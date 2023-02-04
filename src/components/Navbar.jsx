@@ -10,10 +10,7 @@ function Navbar() {
     <React.Fragment>
       <div id="header-navbar">
         <div className="container">
-          <div
-            style={{ border: "1px solid white" }}
-            className="row d-flex justify-content-between align-items-center py-3"
-          >
+          <div className="row d-flex justify-content-between align-items-center py-3">
             <div className="col-md-4">
               <img src={LogoPemerintah} alt="" className="img-logo" />
             </div>
