@@ -1,0 +1,210 @@
+/* handle Content */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #bc2025;
+  margin: 0;
+}
+
+.title2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #bc2025;
+  margin: 0;
+}
+
+.titles {
+  font-size: 12px;
+  font-weight: bold;
+  color: #bc2025;
+  margin: 0;
+}
+
+.titles2 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #bc2025;
+  margin: 0;
+}
+
+.terkini {
+  margin-top: -4px;
+  margin-left: 8px;
+}
+
+.terkini2 {
+  margin-top: -4px;
+  margin-left: 8px;
+}
+
+.border {
+  background: rgb(137, 0, 0);
+  height: 40px;
+  margin-left: -15px;
+  width: 5px;
+}
+
+.border2 {
+  background: rgb(137, 0, 0);
+  height: 40px;
+  margin-left: -15px;
+  width: 5px;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.news-container2 {
+  position: relative;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* handle content 1 berita terbaru */
+.content1 {
+  position: relative;
+}
+
+.content1-bg {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  background-color: rgb(137, 0, 0);
+  width: 100%;
+  height: 310px;
+  border-radius: 5px;
+}
+
+.content1 img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+}
+
+.box-news {
+  position: absolute;
+  background: white;
+  top: 230px;
+  margin-left: -5px;
+  box-shadow: 0px 0px 5px #333;
+  border-radius: 0px 5px 5px 0;
+}
+
+.box-news h5 {
+  text-align: justify;
+  height: auto;
+  width: 275px;
+  margin: 3px;
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.breaking h4 {
+  position: absolute;
+  margin-left: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  top: 275px;
+}
+
+.breaking h6 {
+  position: absolute;
+  margin-left: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  top: 290px;
+  z-index: 6;
+}
+
+/* handle content 2 berita terkini */
+.content2 {
+  position: relative;
+}
+
+.content2-bg {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  background-color: rgb(137, 0, 0);
+  width: 100%;
+  height: 310px;
+  border-radius: 5px;
+}
+
+.content2 img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+/* mengatur ukuran di hp */
+@media (max-width: 576px) {
+  .content1-bg {
+    width: 100%;
+    height: 310px;
+  }
+
+  .content2-bg {
+    width: 100%;
+    height: 310px;
+  }
+
+  #cardContent1 {
+    position: relative;
+    top: 335px;
+  }
+
+  #carouselItems {
+    width: 100%;
+    height: 250px;
+  }
+  .carouselNews div img {
+    height: 225px;
+  }
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.exampleCarousel {
+  position: relative;
+  top: -20px;
+  width: 100%;
+}
+
+.cardContent {
+  background-color: #6f0e19;
+  color: white;
+  position: relative;
+  top: -337px;
+  max-height: fit-content;
+}
+
+.carouselNews img {
+  border-radius: 10px;
+  height: 400px;
+  width: 100%;
+}
