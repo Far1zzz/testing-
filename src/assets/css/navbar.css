@@ -95,7 +95,6 @@ body {
 /* mengatur ukuran di hp */
 @media (max-width: 576px) {
   .img-logo {
-    border: 1px solid wheat;
     width: 230px;
     margin-bottom: 20px;
     float: left;
@@ -113,7 +112,6 @@ body {
   }
 
   .navbar-toggler {
-    border: 1px solid white;
     position: absolute;
     top: -170px;
     right: -12px;
