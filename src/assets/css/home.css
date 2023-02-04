@@ -178,6 +178,7 @@
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
+  top: -335px;
 }
 
 .video-responsive iframe {
@@ -193,14 +194,6 @@
   position: relative;
   top: -20px;
   width: 100%;
-}
-
-.cardContent {
-  background-color: #6f0e19;
-  color: white;
-  position: relative;
-  top: -337px;
-  max-height: fit-content;
 }
 
 .carouselNews img {

@@ -73,20 +73,13 @@ function Home() {
               </div>
             </div>
             <div id="cardContent1" className="col-lg-3 mb-3 ">
-              <div className="card cardContent">
-                <div className="card-header">
-                  <div className="video-responsive">
-                    <iframe
-                      src={"https://www.youtube.com/embed/9H4NkxWUyB8"}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      title="YOUTUBE"
-                    />
-                  </div>
-                </div>
-                <div className="card-body bodyCard">
-                  <small>Testing Ajah</small>
-                </div>
+              <div className="video-responsive">
+                <iframe
+                  src={"https://www.youtube.com/embed/9H4NkxWUyB8"}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="YOUTUBE"
+                />
               </div>
             </div>
           </div>
