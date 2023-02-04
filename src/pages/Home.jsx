@@ -77,7 +77,7 @@ function Home() {
                 <div className="card-header">
                   <div className="video-responsive">
                     <iframe
-                      src={"https://www.youtube.com/embed/eVgpXvGKzOc"}
+                      src={"https://www.youtube.com/embed/I41c7zFEAj8&t"}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       title="YOUTUBE"
@@ -85,13 +85,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="card-body bodyCard">
-                  <small>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eaque sint adipisci laboriosam officiis modi omnis
-                    perspiciatis in corporis iusto excepturi a nisi dolore,
-                    mollitia animi voluptate accusantium molestiae quidem
-                    doloremque.
-                  </small>
+                  <small>Testing Ajah</small>
                 </div>
               </div>
             </div>
