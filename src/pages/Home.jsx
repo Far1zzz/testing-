@@ -77,7 +77,7 @@ function Home() {
                 <div className="card-header">
                   <div className="video-responsive">
                     <iframe
-                      src={"https://www.youtube.com/embed/I41c7zFEAj8&t"}
+                      src={"https://www.youtube.com/embed/9H4NkxWUyB8"}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       title="YOUTUBE"
