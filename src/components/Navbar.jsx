@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/css/navbar.css";
 import LogoPemerintah from "../assets/img/LOGO DISKOM.png";
 import PromotionBanner from "../assets/img/PROMOTION BANNER.png";
@@ -7,6 +7,13 @@ import { Carousel } from "antd";
 import ModalContent from "./ModalContent";
 
 function Navbar() {
+  const [input, setInput] = useState("");
+
+  const searchButton = (e) => {
+    e.preventDefault();
+    alert(`${input}`);
+  };
+
   return (
     <React.Fragment>
       <div id="header-navbar">
@@ -223,15 +230,16 @@ function Navbar() {
                   </div>
                 </li>
               </ul>
-              <form className="d-flex">
+              <form onSubmit={searchButton} className="d-flex">
                 <input
                   className="form-control me-2"
-                  type="search"
+                  type="text"
                   placeholder="Cari..."
                   aria-label="Search"
+                  onChange={(e) => setInput(e.target.value)}
                 />
                 <button className="btn-search" type="submit">
-                  <i class="fas fa-search"></i>
+                  <i className="fas fa-search"></i>
                 </button>
               </form>
             </div>

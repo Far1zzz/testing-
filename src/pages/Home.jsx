@@ -10,11 +10,11 @@ function Home() {
     <React.Fragment>
       <div className="container-fluid mt-3">
         <div className="container" style={{ border: "1px solid black" }}>
-          <div class="news-container">
-            <div class="border">
+          <div className="news-container">
+            <div className="border">
               <div className="terkini">
-                <p class="title">Berita</p>
-                <p class="titles">Terkini</p>
+                <p className="title">Berita</p>
+                <p className="titles">Terkini</p>
               </div>
             </div>
           </div>
@@ -54,11 +54,11 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-9">
-              <div class="news-container2">
-                <div class="border2">
+              <div className="news-container2">
+                <div className="border2">
                   <div className="terkini2">
-                    <p class="title2">Berita</p>
-                    <p class="titles2">Terkini</p>
+                    <p className="title2">Berita</p>
+                    <p className="titles2">Terkini</p>
                   </div>
                 </div>
               </div>
@@ -77,7 +77,7 @@ function Home() {
               <div className="video-responsive">
                 <iframe
                   src={"https://www.youtube.com/embed/9H4NkxWUyB8"}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   title="YOUTUBE"
                 />
@@ -85,8 +85,6 @@ function Home() {
               <div className="shortVid">
                 <video
                   controls
-                  autostart
-                  autoPlay
                   preload="auto"
                   typeof="video/mp4"
                   src={Video}
