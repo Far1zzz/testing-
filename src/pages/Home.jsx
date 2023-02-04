@@ -3,6 +3,7 @@ import "../assets/css/home.css";
 import Content1 from "../assets/img/63CC610C-901F-41DB-AFC8-EAEDA6F73B15-1440x564_c.jpeg";
 import Content2 from "../assets/img/IMG-20230118-WA0022-1440x564_c.jpg";
 import { Carousel } from "antd";
+import Video from "../assets/video/vid.mp4";
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div style={{ border: "1px solid black" }} className="row">
             <div className="col-lg-4">
               <div className="content1">
                 <div className="content1-bg">
@@ -72,7 +73,7 @@ function Home() {
                 </Carousel>
               </div>
             </div>
-            <div id="cardContent1" className="col-lg-3 mb-3 ">
+            <div id="cardContent1" className="col-lg-3 ">
               <div className="video-responsive">
                 <iframe
                   src={"https://www.youtube.com/embed/9H4NkxWUyB8"}
@@ -80,6 +81,16 @@ function Home() {
                   allowFullScreen
                   title="YOUTUBE"
                 />
+              </div>
+              <div className="shortVid">
+                <video
+                  controls
+                  autostart
+                  autoPlay
+                  preload="auto"
+                  typeof="video/mp4"
+                  src={Video}
+                ></video>
               </div>
             </div>
           </div>

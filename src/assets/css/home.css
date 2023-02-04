@@ -161,7 +161,12 @@
 
   #cardContent1 {
     position: relative;
-    top: 335px;
+    top: 325px;
+  }
+  #cardContent1 video {
+    position: relative;
+    top: -75px;
+    left: 0;
   }
 
   #carouselItems {
@@ -178,7 +183,7 @@
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
-  top: -335px;
+  top: -336px;
 }
 
 .video-responsive iframe {
@@ -200,4 +205,19 @@
   border-radius: 10px;
   height: 400px;
   width: 100%;
+}
+
+.shortVid {
+  width: 100%;
+  height: auto;
+  top: -250px;
+  position: relative;
+  border-radius: 3px;
+}
+.shortVid video {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }

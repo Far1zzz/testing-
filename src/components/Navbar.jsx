@@ -4,6 +4,7 @@ import LogoPemerintah from "../assets/img/LOGO DISKOM.png";
 import PromotionBanner from "../assets/img/PROMOTION BANNER.png";
 import PromotionBanner2 from "../assets/img/PROMOTION BANNER 2.png";
 import { Carousel } from "antd";
+import ModalContent from "./ModalContent";
 
 function Navbar() {
   return (
@@ -15,22 +16,24 @@ function Navbar() {
               <img src={LogoPemerintah} alt="" className="img-logo" />
             </div>
             <div className="col-md-7">
-              <Carousel autoplay className="carousel" effect="fade">
-                <div>
-                  <img
-                    src={PromotionBanner}
-                    alt=""
-                    className="caraousel-image"
-                  />
-                </div>
-                <div>
-                  <img
-                    src={PromotionBanner2}
-                    alt=""
-                    className="caraousel-image"
-                  />
-                </div>
-              </Carousel>
+              <ModalContent>
+                <Carousel autoplay className="carousel" effect="fade">
+                  <div>
+                    <img
+                      src={PromotionBanner}
+                      alt=""
+                      className="caraousel-image"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={PromotionBanner2}
+                      alt=""
+                      className="caraousel-image"
+                    />
+                  </div>
+                </Carousel>
+              </ModalContent>
             </div>
           </div>
         </div>
