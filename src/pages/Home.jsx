@@ -10,7 +10,7 @@ function Home() {
     <React.Fragment>
       <div className="container-fluid mt-3">
         <div className="container" style={{ border: "1px solid black" }}>
-          <div className="news-container">
+          <div data-aos="fade-up" className="news-container">
             <div className="border">
               <div className="terkini">
                 <p className="title">Berita</p>
@@ -54,7 +54,7 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-9">
-              <div className="news-container2">
+              <div data-aos="fade-down" className="news-container2">
                 <div className="border2">
                   <div className="terkini2">
                     <p className="title2">Berita</p>
