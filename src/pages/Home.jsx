@@ -20,7 +20,7 @@ function Home() {
           </div>
           <div style={{ border: "1px solid black" }} className="row">
             <div className="col-lg-4">
-              <div className="content1">
+              <div data-aos="zoom-out" className="content1">
                 <div className="content1-bg">
                   <img src={Content1} alt="" />
                   <div className="box-news">
@@ -37,7 +37,7 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-5 mb-3">
-              <div className="content2">
+              <div data-aos="zoom-out" className="content2">
                 <div className="content2-bg">
                   <img src={Content2} alt="Berita terkini 1" />
                   <div className="box-news">
@@ -62,7 +62,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="exampleCarousel">
+              <div data-aos="zoom-in" className="exampleCarousel">
                 <Carousel autoplay className="carouselNews" effect="fade">
                   <div>
                     <img src={Content1} alt="" className="caraouselNews-img" />
