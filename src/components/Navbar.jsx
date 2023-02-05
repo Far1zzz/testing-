@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <React.Fragment>
       <div id="header-navbar">
-        <div className="container">
+        <div data-aos="zoom-in" data-aos-offset="300" className="container">
           <div className="row d-flex justify-content-between align-items-center py-3">
             <div className="col-md-4">
               <img src={LogoPemerintah} alt="" className="img-logo" />
