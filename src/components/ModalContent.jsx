@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const ModalContent = ({ children }) => {
   const [open, setOpen] = useState(false);
 
-  // agar modal muncul 2 detik setelah page load
+  // agar modal muncul 2 detik setelah page
   useEffect(() => {
     setTimeout(() => {
       setOpen(true);
