@@ -20,7 +20,11 @@ function Home() {
           </div>
           <div style={{ border: "1px solid black" }} className="row">
             <div className="col-lg-4">
-              <div data-aos="zoom-out" className="content1">
+              <div
+                data-aos-offset="500"
+                data-aos="fade-right"
+                className="content1"
+              >
                 <div className="content1-bg">
                   <img src={Content1} alt="" />
                   <div className="box-news">
@@ -37,7 +41,11 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-5 mb-3">
-              <div data-aos="zoom-out" className="content2">
+              <div
+                data-aos-offset="500"
+                data-aos="fade-left"
+                className="content2"
+              >
                 <div className="content2-bg">
                   <img src={Content2} alt="Berita terkini 1" />
                   <div className="box-news">
@@ -62,7 +70,11 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div data-aos="zoom-out" className="exampleCarousel">
+              <div
+                data-aos-offset="500"
+                data-aos="fade-right"
+                className="exampleCarousel"
+              >
                 <Carousel autoplay className="carouselNews" effect="fade">
                   <div>
                     <img src={Content1} alt="" className="caraouselNews-img" />
@@ -76,7 +88,7 @@ function Home() {
             <div id="cardContent1" className="col-lg-3 ">
               <div
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="500"
                 className="video-responsive"
               >
                 <iframe
