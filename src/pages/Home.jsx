@@ -37,7 +37,7 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-5 mb-3">
-              <div data-aos="zoom-out" className="content2">
+              <div data-aos="zoom-in" className="content2">
                 <div className="content2-bg">
                   <img src={Content2} alt="Berita terkini 1" />
                   <div className="box-news">
@@ -74,7 +74,7 @@ function Home() {
               </div>
             </div>
             <div id="cardContent1" className="col-lg-3 ">
-              <div data-aos="zoom-out" className="video-responsive">
+              <div data-aos="zoom-in" className="video-responsive">
                 <iframe
                   src={"https://www.youtube.com/embed/9H4NkxWUyB8"}
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
