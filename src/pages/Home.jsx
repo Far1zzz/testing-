@@ -37,7 +37,7 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-5 mb-3">
-              <div data-aos="fade-left" className="content2">
+              <div data-aos="zoom-out" className="content2">
                 <div className="content2-bg">
                   <img src={Content2} alt="Berita terkini 1" />
                   <div className="box-news">
@@ -62,7 +62,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div data-aos="fade-right" className="exampleCarousel">
+              <div data-aos="zoom-in" className="exampleCarousel">
                 <Carousel autoplay className="carouselNews" effect="fade">
                   <div>
                     <img src={Content1} alt="" className="caraouselNews-img" />
@@ -74,7 +74,7 @@ function Home() {
               </div>
             </div>
             <div id="cardContent1" className="col-lg-3 ">
-              <div data-aos="fade-right" className="video-responsive">
+              <div data-aos="zoom-out" className="video-responsive">
                 <iframe
                   src={"https://www.youtube.com/embed/9H4NkxWUyB8"}
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -82,7 +82,7 @@ function Home() {
                   title="YOUTUBE"
                 />
               </div>
-              <div data-aos="fade-left" className="shortVid">
+              <div data-aos="zoom-in" className="shortVid">
                 <video
                   controls
                   preload="auto"
