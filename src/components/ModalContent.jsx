@@ -1,8 +1,15 @@
 import { Modal } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ModalContent = ({ children }) => {
   const [open, setOpen] = useState(false);
+
+  // agar modal muncul 2 detik setelah page load
+  useEffect(() => {
+    setTimeout(() => {
+      setOpen(true);
+    }, 2000);
+  }, []);
   return (
     <>
       <div style={{ cursor: "pointer" }} onClick={() => setOpen(true)}>

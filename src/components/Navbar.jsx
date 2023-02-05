@@ -9,6 +9,7 @@ import ModalContent from "./ModalContent";
 function Navbar() {
   const [input, setInput] = useState("");
 
+  // logic show alert
   const searchButton = (e) => {
     e.preventDefault();
     alert(`${input}`);
