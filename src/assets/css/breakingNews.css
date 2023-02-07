@@ -1,0 +1,19 @@
+.bg-breakingNews {
+  border: 1px solid black;
+  background-color: red;
+  height: 40px;
+}
+
+.content-breakingNews {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 5vh;
+}
+.breakingNews {
+  background-color: aliceblue;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

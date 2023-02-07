@@ -1,11 +1,11 @@
 import React from "react";
-import "../assets/css/home.css";
-import Content1 from "../assets/img/63CC610C-901F-41DB-AFC8-EAEDA6F73B15-1440x564_c.jpeg";
-import Content2 from "../assets/img/IMG-20230118-WA0022-1440x564_c.jpg";
+import "../../assets/css/home.css";
+import Content1 from "../../assets/img/63CC610C-901F-41DB-AFC8-EAEDA6F73B15-1440x564_c.jpeg";
+import Content2 from "../../assets/img/IMG-20230118-WA0022-1440x564_c.jpg";
 import { Carousel } from "antd";
-import Video from "../assets/video/vid.mp4";
+import Video from "../../assets/video/vid.mp4";
 
-function Home() {
+const Home = () => {
   return (
     <React.Fragment>
       <div className="container-fluid mt-3">
@@ -96,6 +96,6 @@ function Home() {
       </div>
     </React.Fragment>
   );
-}
+};
 
 export default Home;

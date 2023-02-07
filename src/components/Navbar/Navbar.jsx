@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "../assets/css/navbar.css";
-import LogoPemerintah from "../assets/img/LOGO DISKOM.png";
-import PromotionBanner from "../assets/img/PROMOTION BANNER.png";
-import PromotionBanner2 from "../assets/img/PROMOTION BANNER 2.png";
+import "../../assets/css/navbar.css";
+import { Link } from "react-router-dom";
+import LogoPemerintah from "../../assets/img/LOGO DISKOM.png";
+import PromotionBanner from "../../assets/img/PROMOTION BANNER.png";
+import PromotionBanner2 from "../../assets/img/PROMOTION BANNER 2.png";
 import { Carousel } from "antd";
-import ModalContent from "./ModalContent";
+import ModalContent from "../ModalContent/ModalContent";
 
 function Navbar() {
   const [input, setInput] = useState("");
@@ -16,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div id="header-navbar">
         <div data-aos="zoom-in" data-aos-offset="300" className="container">
           <div className="row d-flex justify-content-between align-items-center py-3">
@@ -45,7 +46,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <nav className="navbar navbar-expand-lg navbar-content">
+        <nav className="navbar navbar-expand-lg navbar-content p-0">
           <div className="container-fluid">
             <button
               className="navbar-toggler"
@@ -64,19 +65,18 @@ function Navbar() {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <div
+                  <Link
+                    to={"/"}
                     className="nav-link contents-navbar"
                     aria-current="page"
-                    href="#"
                   >
                     Beranda
-                  </div>
+                  </Link>
                 </li>
                 {/* handle navbar profile */}
                 <li className="nav-item dropdown">
                   <div
                     className="nav-link dropdown-toggle contents-navbar"
-                    href="#"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -89,14 +89,18 @@ function Navbar() {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <div className="dropdown-item" href="#">
+                      <Link to={"/visi-misi"} className="dropdown-item">
                         Visi & Misi
-                      </div>
+                      </Link>
                     </li>
                     <li>
-                      <div className="dropdown-item" href="#">
+                      <Link
+                        to={"program-gerakan"}
+                        className="dropdown-item"
+                        href="#"
+                      >
                         7 program & 12 Gerakan
-                      </div>
+                      </Link>
                     </li>
 
                     <li>
@@ -247,7 +251,7 @@ function Navbar() {
           </div>
         </nav>
       </div>
-    </React.Fragment>
+    </>
   );
 }
 
