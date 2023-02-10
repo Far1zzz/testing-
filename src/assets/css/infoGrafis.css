@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.bg-infoGrafis {
+  background-color: #f3ebeb;
+}
+
+.title-infoGrafis {
+  font-weight: bold;
+  font-size: 32px;
+  color: #d74141;
+  text-align: center;
+}
+
+.line-infoGrafis {
+  border: 2px solid #9b1a1a;
+  top: -20px;
+  width: 25%;
+  margin: auto;
+}
+
+.img-infoGrafis {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.infoGrafis-content {
+  transition: transform 0.5s ease;
+}
+
+.infoGrafis-content:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

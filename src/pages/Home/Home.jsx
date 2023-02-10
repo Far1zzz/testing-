@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import "../../assets/css/home.css";
 import "../../assets/css/breakingNews.css";
 import "../../assets/css/carouselContent.css";
+import "../../assets/css/infoGrafis.css";
 import BreakingNews from "../../components/BreakingNews/BreakingNews";
 import CarouselContent from "../../components/Carousel/Carousel";
 import "react-calendar/dist/Calendar.css";
 import { Calendar } from "react-calendar";
 import BeritaLainnya from "../../components/BeritaLainnya/BeritaLainnya";
+import InfoGrafis from "../../components/InfoGrafis/InfoGrafis";
 
 const Home = () => {
   const [input, setInput] = useState("");
@@ -59,8 +61,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <BeritaLainnya />
+      <InfoGrafis />
     </>
   );
 };
