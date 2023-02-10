@@ -1,0 +1,36 @@
+.title {
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #d74141;
+}
+
+.image-berita {
+  border-radius: 5px;
+}
+
+.position-berita {
+  margin-bottom: 24px;
+}
+
+.carousel-img {
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-description {
+  font-family: "poppins", sans-serif;
+  height: 50px;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+}
+
+.line-title {
+  border: 2px solid #d74141;
+  border-radius: 4px;
+  position: relative;
+  top: -13.5px;
+  margin-bottom: -10px;
+}

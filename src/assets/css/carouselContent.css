@@ -1,0 +1,35 @@
+.news-title-background {
+  width: 50%;
+  background-color: #ffffff;
+  height: 40px;
+  position: absolute;
+  top: 320px;
+  padding: 10px;
+  border-radius: 0px 2px 15px 0px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.news-title {
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #d74141;
+  text-transform: capitalize;
+  /* Agar text terbatas */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.date-time-news {
+  color: #ffffff;
+  padding: 10px;
+  position: absolute;
+  top: 360px;
+}
+
+.date-time-news h5 {
+  margin-bottom: 2.5vh;
+}

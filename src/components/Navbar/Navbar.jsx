@@ -8,21 +8,19 @@ import { Carousel } from "antd";
 import ModalContent from "../ModalContent/ModalContent";
 
 function Navbar() {
-  const [input, setInput] = useState("");
-
-  // logic show alert
-  const searchButton = (e) => {
-    e.preventDefault();
-    alert(`${input}`);
-  };
-
   return (
     <>
       <div id="header-navbar">
         <div data-aos="zoom-in" data-aos-offset="300" className="container">
           <div className="row d-flex justify-content-between align-items-center py-3">
             <div className="col-md-4">
-              <img src={LogoPemerintah} alt="" className="img-logo" />
+              <img
+                src={
+                  "https://media.discordapp.net/attachments/1070315411377225769/1072513577447063572/Asset_35x.png?width=1440&height=289"
+                }
+                alt=""
+                className="img-logo"
+              />
             </div>
             <div className="col-md-7">
               <ModalContent>
@@ -235,18 +233,6 @@ function Navbar() {
                   </div>
                 </li>
               </ul>
-              <form onSubmit={searchButton} className="d-flex">
-                <input
-                  className="form-control me-2"
-                  type="text"
-                  placeholder="Cari..."
-                  aria-label="Search"
-                  onChange={(e) => setInput(e.target.value)}
-                />
-                <button className="btn-search" type="submit">
-                  <i className="fas fa-search"></i>
-                </button>
-              </form>
             </div>
           </div>
         </nav>
