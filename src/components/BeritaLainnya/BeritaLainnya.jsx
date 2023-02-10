@@ -1,7 +1,6 @@
 import React from "react";
 import "../../assets/css/beritaLainnya.css";
 import "../../assets/css/carouselBerita.css";
-import Content3 from "../../assets/img/carouselBerita.png";
 import BeritaPopuler from "../BeritaPopuler/BeritaPopuler";
 import CarouselBeritaLainnya from "./CarouselBeritaLainnya";
 import CarouselBeritaLainnya2 from "./CarouselBeritaLainnya2";
@@ -29,6 +28,11 @@ const BeritaLainnya = () => {
               <div className="col-lg-6">
                 <CarouselBeritaLainnya2 />
               </div>
+            </div>
+            <div className="view-all">
+              <button className="button">
+                <span>View All</span>
+              </button>
             </div>
           </div>
           <div className="col-lg-4">

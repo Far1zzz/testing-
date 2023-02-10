@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "../../assets/css/home.css";
+import "../../assets/css/breakingNews.css";
+import "../../assets/css/carouselContent.css";
 import BreakingNews from "../../components/BreakingNews/BreakingNews";
 import CarouselContent from "../../components/Carousel/Carousel";
-import "../../assets/css/carouselContent.css";
 import "react-calendar/dist/Calendar.css";
 import { Calendar } from "react-calendar";
 import BeritaLainnya from "../../components/BeritaLainnya/BeritaLainnya";
@@ -42,6 +43,11 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-9 ">
               <CarouselContent />
+              <div className="view-all">
+                <button className="button">
+                  <span>View All</span>
+                </button>
+              </div>
             </div>
             <div className="col-lg-3">
               <Calendar

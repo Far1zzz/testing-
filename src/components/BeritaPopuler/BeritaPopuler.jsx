@@ -47,7 +47,7 @@ const BeritaPopuler = () => {
           </div>
         </div>
       </div>
-      <div className="row mt-2">
+      <div className="row mt-2 ">
         <div className="col-lg-4">
           <img src={Content} alt="" className="img-fluid image-berita" />{" "}
         </div>

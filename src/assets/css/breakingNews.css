@@ -1,19 +1,39 @@
 .bg-breakingNews {
   background-color: #d74141;
-  height: 40px;
+  height: 50px;
 }
 
 .content-breakingNews {
   display: flex;
   align-items: center;
   height: 100%;
-  gap: 5vh;
+  color: #d74141;
 }
 .breakingNews {
   background-color: aliceblue;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: "poppins", sans-serif;
   font-weight: bold;
+  width: 185px;
+  margin-right: 10px;
+}
+
+.description-breakingNews {
+  color: white;
+  position: relative;
+  margin-left: 5px;
+}
+
+.terkini {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1px 15px 1px 15px;
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #d74141;
+  margin-left: 25px;
 }
