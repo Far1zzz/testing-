@@ -10,6 +10,8 @@ import { Calendar } from "react-calendar";
 import BeritaLainnya from "../../components/BeritaLainnya/BeritaLainnya";
 import InfoGrafis from "../../components/InfoGrafis/InfoGrafis";
 import PengumumanInformasi from "../../components/PengumumanInformasi/PengumumanInformasi";
+import Aplikasi from "../../components/Aplikasi/Aplikasi";
+import Sosmed from "../../components/Sosmed/Sosmed";
 
 const Home = () => {
   const [input, setInput] = useState("");
@@ -62,9 +64,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Aplikasi />
       <BeritaLainnya />
       <InfoGrafis />
       <PengumumanInformasi />
+      <Sosmed />
     </>
   );
 };

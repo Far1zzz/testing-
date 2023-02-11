@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../assets/css/navbar.css";
 import { Link } from "react-router-dom";
 import PromotionBanner from "../../assets/img/PROMOTION BANNER.png";
