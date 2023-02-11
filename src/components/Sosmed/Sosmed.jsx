@@ -18,7 +18,7 @@ const Sosmed = () => {
   return (
     <div className="container mt-3">
       <div className="row text-center">
-        <h3>Ikuti Kami</h3>
+        <h3 className="title-sosmed">Ikuti Kami</h3>
         <div className="item-sosmed">
           <img onClick={click} src={YT} alt="none" />
           <img onClick={click} src={FB} alt="none" />

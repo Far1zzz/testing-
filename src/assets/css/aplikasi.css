@@ -1,0 +1,31 @@
+.aplikasi {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 75px;
+  margin: 100px 0 100px 0;
+}
+
+.item-aplikasi {
+  width: 100px;
+  height: 100px;
+  background-color: #d74141;
+  border-radius: 100%;
+}
+
+.nama-aplikasi {
+  color: #d74141;
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.nama-aplikasi:hover {
+  color: black;
+  transform: scale(1.2);
+}
