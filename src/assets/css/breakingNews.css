@@ -28,6 +28,10 @@
   margin-left: 5px;
   cursor: pointer;
 }
+.description-breakingNews a {
+  color: white;
+  text-decoration: none;
+}
 
 .terkini {
   background-color: white;

@@ -9,11 +9,11 @@ const BreakingNews = () => {
         <Marquee gradient={false} pauseOnClick={true}>
           <div className="terkini">Terkini</div>
           <div className="description-breakingNews">
-            BUPATI MENGHADIRI PERTEMUAN DENGAN GUBERNUR
+            <a href="/"> BUPATI MENGHADIRI PERTEMUAN DENGAN GUBERNUR</a>
           </div>
           <div className="terkini">Terkini</div>
           <div className="description-breakingNews">
-            WAKIL BUPATI MENDAPAT PENGHARGAAN{" "}
+            <a href="/"> WAKIL BUPATI MENDAPAT PENGHARGAAN </a>
           </div>
         </Marquee>
       </div>
