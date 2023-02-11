@@ -12,6 +12,7 @@ import InfoGrafis from "../../components/InfoGrafis/InfoGrafis";
 import PengumumanInformasi from "../../components/PengumumanInformasi/PengumumanInformasi";
 import Aplikasi from "../../components/Aplikasi/Aplikasi";
 import Sosmed from "../../components/Sosmed/Sosmed";
+import Welcome from "../../components/Welcome/Welcome";
 
 const Home = () => {
   const [input, setInput] = useState("");
@@ -26,6 +27,7 @@ const Home = () => {
   return (
     <>
       <BreakingNews />
+      <Welcome />
       <div className="container-fluid mt-3 bg-carousel">
         <div className="container">
           <div className="row">
