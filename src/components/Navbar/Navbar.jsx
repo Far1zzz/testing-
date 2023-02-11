@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../../assets/css/navbar.css";
 import { Link } from "react-router-dom";
-import LogoPemerintah from "../../assets/img/LOGO DISKOM.png";
 import PromotionBanner from "../../assets/img/PROMOTION BANNER.png";
 import PromotionBanner2 from "../../assets/img/PROMOTION BANNER 2.png";
 import { Carousel } from "antd";
