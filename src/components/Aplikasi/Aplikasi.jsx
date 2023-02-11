@@ -2,8 +2,10 @@ import React from "react";
 import "../../assets/css/aplikasi.css";
 
 const Aplikasi = () => {
+  const jam = new Date();
+
   const clickk = () => {
-    alert("Blom ado Link Nyo");
+    alert("Belom ado linkNyo createdAt(03:35 AM)");
   };
 
   return (
