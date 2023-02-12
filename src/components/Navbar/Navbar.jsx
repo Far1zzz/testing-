@@ -12,7 +12,7 @@ function Navbar() {
         <div id="navbar-brand">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 justify-content-between">
+              <div className="col-lg-4 ">
                 <img
                   src={
                     "https://cdn.discordapp.com/attachments/1070315411377225769/1072513577447063572/Asset_35x.png"
@@ -21,200 +21,236 @@ function Navbar() {
                   className="img-kominfo"
                 />
               </div>
-              <div className="col-lg-6 text-end mt-3 text-white ">
-                <span>
-                  <i className="fa fa-sun mx-3"></i>
-                </span>
-                EN | ID
-              </div>
+              <div className="border bg-white col-lg-8"></div>
             </div>
           </div>
-        </div>
-        <div className="navbar-content">
-          <nav class="navbar navbar-expand-lg  p-0">
-            <div class="container">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <Link
-                      to={"/"}
-                      className="nav-link contents-navbar"
-                      aria-current="page"
-                    >
-                      <i class="bi bi-house-fill"></i> Beranda
-                    </Link>
-                  </li>
-                  {/* handle navbar profile */}
-                  <li className="nav-item dropdown">
-                    <div
-                      className="nav-link dropdown-toggle contents-navbar"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Profile
-                    </div>
-                    <ul
-                      className="dropdown-menu bg-content-navbar"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li>
-                        <Link to={"/visi-misi"} className="dropdown-item">
-                          Visi & Misi
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to={"program-gerakan"}
-                          className="dropdown-item"
-                          href="#"
-                        >
-                          7 program & 12 Gerakan
-                        </Link>
-                      </li>
+          <div className="navbar-content">
+            <nav class="navbar navbar-expand-lg  p-0">
+              <div class="container">
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li className="nav-item">
+                      <Link
+                        to={"/"}
+                        className="nav-link contents-navbar"
+                        aria-current="page"
+                      >
+                        <i class="bi bi-house-fill"></i> Beranda
+                      </Link>
+                    </li>
+                    {/* handle navbar profile */}
+                    <li className="nav-item dropdown">
+                      <div
+                        className="nav-link dropdown-toggle contents-navbar"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Profile
+                      </div>
+                      <ul
+                        className="dropdown-menu bg-content-navbar"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li>
+                          <Link to={"/visi-misi"} className="dropdown-item">
+                            Visi & Misi
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to={"program-gerakan"}
+                            className="dropdown-item"
+                            href="#"
+                          >
+                            7 program & 12 Gerakan
+                          </Link>
+                        </li>
 
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          Struktur Organisasi
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  {/* handle navbar portal berita */}
-                  <li className="nav-item dropdown">
-                    <div
-                      className="nav-link dropdown-toggle contents-navbar"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Portal Berita
-                    </div>
-                    <ul
-                      className="dropdown-menu bg-content-navbar"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          Berita
-                        </div>
-                      </li>
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          Berita Pengumuman
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  {/* handle navbar informasi publik */}
-                  <li className="nav-item dropdown">
-                    <div
-                      className="nav-link dropdown-toggle contents-navbar"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Informasi Publik
-                    </div>
-                    <ul
-                      className="dropdown-menu bg-content-navbar"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          Banyuasin Tv
-                        </div>
-                      </li>
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          SIMAYA
-                        </div>
-                      </li>
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          Informasi Covid-19
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  {/* handle navbar portal terkait */}
-                  <li className="nav-item dropdown">
-                    <div
-                      className="nav-link dropdown-toggle contents-navbar"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Portal Terkait
-                    </div>
-                    <ul
-                      className="dropdown-menu bg-content-navbar"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          Portal Data
-                        </div>
-                      </li>
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          JDIH Banyuasin
-                        </div>
-                      </li>
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          BPS Banyuasin
-                        </div>
-                      </li>
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          BSSN
-                        </div>
-                      </li>
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          BIMTEK BPPTIK
-                        </div>
-                      </li>
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          BMKG
-                        </div>
-                      </li>
-                      <li>
-                        <div className="dropdown-item" href="#">
-                          EMONEV Banyuasin
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item">
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            Struktur Organisasi
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    {/* handle navbar portal berita */}
+                    <li className="nav-item dropdown">
+                      <div
+                        className="nav-link dropdown-toggle contents-navbar"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Portal Berita
+                      </div>
+                      <ul
+                        className="dropdown-menu bg-content-navbar"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            Berita
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            Berita Pengumuman
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    {/* handle navbar informasi publik */}
+                    <li className="nav-item dropdown">
+                      <div
+                        className="nav-link dropdown-toggle contents-navbar"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Informasi Publik
+                      </div>
+                      <ul
+                        className="dropdown-menu bg-content-navbar"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            Banyuasin Tv
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            SIMAYA
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            Informasi Covid-19
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    {/* handle navbar portal terkait */}
+                    <li className="nav-item dropdown">
+                      <div
+                        className="nav-link dropdown-toggle contents-navbar"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Portal Terkait
+                      </div>
+                      <ul
+                        className="dropdown-menu bg-content-navbar"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            Portal Data
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            JDIH Banyuasin
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            BPS Banyuasin
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            BSSN
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            BIMTEK BPPTIK
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            BMKG
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            EMONEV Banyuasin
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    {/* <li className="nav-item">
                     <div className="nav-link contents-navbar" href="#">
                       Gallery
                     </div>
-                  </li>
-                </ul>
+                  </li> */}
+                    <li className="nav-item dropdown">
+                      <div
+                        className="nav-link dropdown-toggle contents-navbar"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Gallery
+                      </div>
+                      <ul
+                        className="dropdown-menu bg-content-navbar"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            Foto Peristiwa
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            Video
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown-item" href="#">
+                            InfoGrafis
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div className=" text-end text-white ">
+                  <span>
+                    <i className="fa fa-sun mx-3"></i>
+                  </span>
+                  EN | ID
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
       </header>
       <Carousel>
