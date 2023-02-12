@@ -29,8 +29,8 @@ const Home = () => {
 
   return (
     <>
-      <Carousel>
-        {/* <div className="caraousel-item">
+      {/* <Carousel>
+        <div className="caraousel-item">
           <div className="content-kominfo ">
             <img src={CarouselImg} alt="Logo" />
             <div className="content-kominfo-text container">
@@ -46,7 +46,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-        </div> */}
+        </div>
         <div className="caraousel-item">
           <div className="content-kominfo ">
             <img src={CarouselImg2} alt="Logo" />
@@ -64,7 +64,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </Carousel>
+      </Carousel> */}
       <BreakingNews />
       <Welcome />
       <div className="container-fluid mt-3 bg-carousel">
