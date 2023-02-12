@@ -1,40 +1,85 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&family=Tangerine&family=Ubuntu:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-#header-navbar {
-  background: #6f0e19;
+.carousel-item {
   position: relative;
+  height: 100vh;
 }
 
-body {
-  background: white;
-}
-
-.img-logo {
-  width: 400px;
-  aspect-ratio: auto;
-}
-
-.caraousel-image {
+.content-kominfo img {
   width: 100%;
-  height: auto;
-  aspect-ratio: auto;
-  border-radius: 5px;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
-.carousel {
-  width: auto;
-  height: 140px;
+.content-kominfo-text {
+  position: absolute;
+  margin-left: 80px;
+  font-family: "Poppins";
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: white;
 }
 
-/* handle navabar */
+.content-kominfo-text h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px black;
+}
+
+.content-kominfo-text h2 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+}
+
+.btn-berita {
+  width: 180px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+button h6 {
+  font-size: 16px;
+  color: #d74141;
+  padding: 5px;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+/* handle navbar pertama sekali di atas */
+header #navbar-brand {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  background-color: rgba(150, 6, 6, 0.8);
+  z-index: 1;
+  width: 100%;
+}
+.img-kominfo {
+  width: 250px;
+}
+
+/* conteol navbar content home dan dll */
 .navbar-content {
-  background: #bc2025;
+  position: absolute;
+  top: 70px;
+  background-color: rgba(111, 14, 25, 0.84);
+  width: 100%;
+  z-index: 2;
 }
 
 .contents-navbar {
@@ -60,65 +105,75 @@ body {
 }
 
 .bg-content-navbar {
-  background: #bc2025;
+  background: rgba(150, 6, 6, 0.8);
 }
 
 .dropdown-item {
   color: white;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .dropdown-item:hover {
   background: white;
   color: #6f0e19;
   cursor: pointer;
+  padding-left: 10px;
 }
 
-.btn-search {
-  background: white;
-  border: none;
-  width: 50px;
-  border-radius: 5px;
-}
-
-/* mengatur ukuran pc dan tablet juga, namun jika tidka bisa disini buat media query lainnya */
-@media (max-width: 992px) {
-  .caraousel-image,
-  .carousel {
+@media only screen and (max-width: 576px) {
+  .carousel-item {
+    position: relative;
+    height: 100vh;
+  }
+  .content-kominfo img {
     width: 100%;
-    height: auto;
-  }
-}
-
-/* tablet */
-
-/* mengatur ukuran di hp */
-@media (max-width: 576px) {
-  .img-logo {
-    width: 230px;
-    margin-bottom: 20px;
-    float: left;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
-  .content2 img {
-    width: 100%;
-    height: auto;
-  }
-
-  .caraousel-image,
-  .carousel {
-    width: 100%;
-    height: 100px;
-  }
-
-  .navbar-toggler {
+  .content-kominfo-text {
     position: absolute;
-    top: -170px;
-    right: -12px;
-    transform: translateY(-50%) translateX(-50%);
+    margin-left: 7px;
+    font-family: "Poppins";
+    font-size: 5px;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    color: white;
   }
 
-  .navbar-content {
-    background: #6f0e19;
+  .content-kominfo-text h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px black;
+  }
+
+  .content-kominfo-text h2 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 7px;
+    text-align: left;
+    color: white;
+  }
+
+  .btn-berita {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+  }
+
+  button h6 {
+    font-size: 8px;
+    color: #d74141;
+    padding: 5px;
+    font-family: "Poppins";
+    font-weight: 700;
   }
 }

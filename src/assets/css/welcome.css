@@ -1,0 +1,21 @@
+.welcome-description {
+  margin-top: 30px;
+  color: #d74141;
+}
+
+.welcome-description img {
+  width: 200px;
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.318),
+    0 6px 8px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100%;
+}
+
+.welcome-description h6 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.welcome-description p {
+  font-size: 18px;
+  font-weight: bold;
+}
