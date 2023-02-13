@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#header-navbar {
+  background: #6f0e19;
+  position: relative;
+}
+
+body {
+  background: white;
+}
+
+.img-logo {
+  width: 400px;
+  aspect-ratio: auto;
+}
+
+.caraousel-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  border-radius: 5px;
+}
+
+.carousel {
+  width: auto;
+  height: 140px;
+}
+
+/* handle navabar */
+
+.content-navbars {
+  background: #bc2025;
+}
+.contents-navbar {
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+
+.contents-navbar:hover {
+  background-color: white;
+  color: #6f0e19;
+  font-family: sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.dropdown-header {
+  color: white;
+}
+
+.bg-content-navbar {
+  background: #bc2025;
+}
+
+.dropdown-item {
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: white;
+  color: #6f0e19;
+  cursor: pointer;
+}
+
+.btn-search {
+  background: white;
+  border: none;
+  width: 50px;
+  border-radius: 5px;
+}
+
+/* mengatur ukuran pc dan tablet juga, namun jika tidka bisa disini buat media query lainnya */
+@media (max-width: 992px) {
+  .caraousel-image,
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* mengatur ukuran di hp */
+@media (max-width: 576px) {
+  .img-logo {
+    width: 230px;
+    margin-bottom: 20px;
+    float: left;
+  }
+
+  .content2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .caraousel-image,
+  .carousel {
+    width: 100%;
+    height: 100px;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: -170px;
+    right: -12px;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  .content-navbars {
+    background: #6f0e19;
+  }
+}

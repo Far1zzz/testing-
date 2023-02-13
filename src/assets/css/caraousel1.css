@@ -61,18 +61,6 @@ button h6 {
 }
 
 /* handle navbar pertama sekali di atas */
-header #navbar-brand {
-  position: absolute;
-  top: 0;
-  padding: 10px 0 10px 0;
-  background-color: rgba(150, 6, 6, 0.8);
-  z-index: 1;
-  width: 100%;
-}
-.img-kominfo {
-  width: 275px;
-  padding-left: 5px;
-}
 
 /* conteol navbar content home dan dll */
 .navbar-content {

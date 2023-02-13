@@ -19,7 +19,7 @@ function App() {
         <Route path="/visi-misi" element={<VisiMisi />} />
         <Route path="/program-gerakan" element={<Program />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

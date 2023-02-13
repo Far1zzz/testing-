@@ -16,6 +16,7 @@ import Sosmed from "../../components/Sosmed/Sosmed";
 import Welcome from "../../components/Welcome/Welcome";
 import CarouselImg from "../../assets/img/CarouselContent2.png";
 import CarouselImg2 from "../../assets/img/CarouselContent.png";
+import Carousel1 from "../../components/Caraousel1/Caraousel1";
 
 const Home = () => {
   const [input, setInput] = useState("");
@@ -29,42 +30,7 @@ const Home = () => {
 
   return (
     <>
-      {/* <Carousel>
-        <div className="caraousel-item">
-          <div className="content-kominfo ">
-            <img src={CarouselImg} alt="Logo" />
-            <div className="content-kominfo-text container">
-              <h1>Pemerintahan</h1>
-              <h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                et reprehenderit qui necessitatibus fuga sapiente alias
-                consequatur! Rerum expedita, quibusdam nam assumenda deleniti
-                totam, quod, eveniet veritatis ullam molestiae nobis.
-              </h2>
-              <button className="btn-berita">
-                <h6>Selengkapnya...</h6>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="caraousel-item">
-          <div className="content-kominfo ">
-            <img src={CarouselImg2} alt="Logo" />
-            <div className="content-kominfo-text container">
-              <h1>Pemerintahan</h1>
-              <h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                et reprehenderit qui necessitatibus fuga sapiente alias
-                consequatur! Rerum expedita, quibusdam nam assumenda deleniti
-                totam, quod, eveniet veritatis ullam molestiae nobis.
-              </h2>
-              <button className="btn-berita">
-                <h6>Selengkapnya...</h6>
-              </button>
-            </div>
-          </div>
-        </div>
-      </Carousel> */}
+      <Carousel1 />
       <BreakingNews />
       <Welcome />
       <div className="container-fluid mt-3 bg-carousel">
